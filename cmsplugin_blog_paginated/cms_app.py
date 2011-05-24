@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class BlogPaginationApphook(CMSApp):
-    name = _("Blog Paginated Apphook")
-    urls = ["cmplugin_blog_paginated.urls"]
+    name = _('Blog Paginated Apphook')
+    urls = ['cmsplugin_blog_paginated.urls']
 
 apphook_pool.register(BlogPaginationApphook)
