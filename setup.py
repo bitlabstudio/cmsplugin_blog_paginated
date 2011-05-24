@@ -5,7 +5,7 @@ setup(
     name='cmsplugin-blog-paginated',
     version='0.1',
     description='Overrides the index view of cmsplugin_blogs urls.py in order to provide pagination for that view.',
-    long_description=open(os.path.join(os.path.dirname(__file__), 'README.txt')).read(),
+    long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     author='Martin Brochhaus',
     author_email='martin.brochhaus@bitmazk.com',
     url='http://github.com/bitmazk/cmsplugin-blog-paginated/',
