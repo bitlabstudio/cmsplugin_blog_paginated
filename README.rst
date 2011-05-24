@@ -16,7 +16,7 @@ Prerequisites
 Installation
 ============
 
-pip install -e git+https://github.com/bitmazk/cmsplugin-blog-pagination#egg=cmsplugin_blog_pagination
+pip install -e git+git://github.com/bitmazk/cmsplugin_blog_paginated.git#egg=cmsplugin_blog_paginated
 
 Configuration
 =============

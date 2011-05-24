@@ -1,3 +1,1 @@
-recursive-include cmsplugin_blog_pagination/templates *
-recursive-include cmsplugin_blog_pagintation/locale *
-recursive-include cmsplugin_blog_pagination/static *
+recursive-include cmsplugin-blog-paginated/*
