@@ -21,7 +21,9 @@ pip install -e git+git://github.com/bitmazk/cmsplugin_blog_paginated.git#egg=cms
 Configuration
 =============
 
-Add PAGINATE_BY to your settings.py. Default is 10.
+Add BLOG_PAGINATE_BY to your settings.py. Default is 10.
+
+Use the Blog Paginated Apphook instead of the normal Blog Apphook in the administration.
 
 License
 =======
