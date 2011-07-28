@@ -10,5 +10,4 @@ class BlogArchiveIndexView(ArchiveIndexView):
     date_field = 'pub_date'
 
     def get_paginate_by(self, queryset):
-        return settings.BLOG_PAGINATE_BY
-
+        return getattr(settings, 'BLOG_PAGINATED_BY', 10)
