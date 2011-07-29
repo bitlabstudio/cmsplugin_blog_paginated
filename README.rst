@@ -23,7 +23,33 @@ Configuration
 
 Add BLOG_PAGINATE_BY to your settings.py. Default is 10.
 
-Use the Blog Paginated Apphook instead of the normal Blog Apphook in the administration.
+Use the Blog Paginated Apphook instead of the normal Blog Apphook in the
+administration.
+
+Usage
+======
+
+Your ``archive_index.html`` will now be served by a ArchiveIndexView. Therefore 
+you have access to a context variable named ``page_obj``, as documented
+`here <https://docs.djangoproject.com/en/dev/ref/class-based-views/#django.views.generic.list.MultipleObjectMixin>`_.
+
+A simple paginator could look like this::
+
+  <div>
+    <span>
+      {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+      {% endif %}
+
+      <span>
+        {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+      </span>
+
+      {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">next</a>
+      {% endif %}
+    </span>
+  </div>
 
 License
 =======
