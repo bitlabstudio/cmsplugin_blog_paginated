@@ -1,3 +1,8 @@
+Important
+=========
+
+This app has been discontinued and is no longer maintained.
+
 cmsplugin_blog_pagination
 =========================
 
